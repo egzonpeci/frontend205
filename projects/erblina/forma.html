@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Your Tickets</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2887ff;
+            --primary-color-dark: #2476da;
+            --text-dark: #0a0a0a;
+            --text-light: #737373;
+            --extra-light: #f3f4f6;
+            --white: #ffffff;
+            --max-width: 1200px;
+            --font-size-base: 16px;
+            --font-family: "DM Sans", sans-serif;
+        }
+
+        
+        .reservation-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--extra-light);
+            padding: 2rem;
+        }
+
+        .form-container {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: var(--max-width);
+            box-sizing: border-box;
+        }
+
+        .form-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .form-subtitle {
+            text-align: center;
+            font-size: 1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            font-size: 1rem;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+            font-size: var(--font-size-base);
+            color: var(--text-dark);
+            background-color: var(--extra-light);
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1.1rem;
+            font-family: var(--font-family);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: var(--primary-color-dark);
+        }
+
+        /* Përgjegjshmëria */
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 1.5rem;
+            }
+
+            .form-title {
+                font-size: 1.5rem;
+            }
+
+            .form-subtitle {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Gjuha e përkthimit */
+        .language-switcher {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .language-switcher button {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-switcher button:hover {
+            background-color: var(--primary-color-dark);
+        }
+
+        /* Mesazhi i suksesit */
+        .success-message {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1.2rem;
+            text-align: center;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="reservation-form">
+        <div class="form-container">
+            <h2 class="form-title">Book Your Tickets</h2>
+            <p class="form-subtitle">Fill out the details and plan your trip!</p>
+            
+            <form id="bookingForm" onsubmit="return false;"> <!-- Parandalon dërgimin -->
+                <!-- First Name and Last Name -->
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required />
+                </div>
+                
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required />
+                </div>
+                
+                <!-- Number of Tickets -->
+                <div class="form-group">
+                    <label for="tickets">Number of Tickets</label>
+                    <input type="number" id="tickets" name="tickets" min="1" max="10" placeholder="Number of tickets" required />
+                </div>
+                
+                <!-- Are you a Minor -->
+                <div class="form-group">
+                    <label for="minor">Are you a Adult?</label>
+                    <select id="minor" name="minor" required>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                
+                <!-- Trip Type -->
+                <div class="form-group">
+                    <label for="trip-type">Trip Type</label>
+                    <select id="trip-type" name="trip-type" required>
+                        <option value="one-way">One-Way</option>
+                        <option value="round-trip">Round Trip</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="button" class="submit-btn" onclick="submitForm()">Book Now</button>
+            </form>
+
+            <!-- Language Switcher Button -->
+            <div class="language-switcher">
+                <button onclick="switchLanguage()">Switch to Albanian</button>
+            </div>
+
+            <!-- Success Message -->
+            <div class="success-message" id="successMessage">Your booking has been successfully submitted!</div>
+        </div>
+    </section>
+
+    <script>
+        function submitForm() {
+            // Shfaq mesazhin e suksesit
+            document.getElementById('successMessage').style.display = 'block';
+
+            // Fshi mesazhin pas disa sekondash
+            setTimeout(function() {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 3000);
+        }
+
+        function switchLanguage() {
+            // Switch the content to Albanian
+            document.querySelector('.form-title').textContent = "Rezervo Biletat Tuaja";
+            document.querySelector('.form-subtitle').textContent = "Plotësoni informacionet dhe planifikoni aventurën tuaj!";
+            document.querySelector('label[for="first-name"]').textContent = "Emri";
+            document.querySelector('label[for="last-name"]').textContent = "Mbiemri";
+            document.querySelector('label[for="tickets"]').textContent = "Numri i biletave";
+            document.querySelector('label[for="minor"]').textContent = "A je i Rritur?";
+            document.querySelector('label[for="trip-type"]').textContent = "Lloji i udhëtimit";
+            document.querySelector('.submit-btn').textContent = "Rezervo tani";
+            document.querySelector('option[value="yes"]').textContent = "Po";
+            document.querySelector('option[value="no"]').textContent = "Jo";
+            document.querySelector('option[value="one-way"]').textContent = "Vetëm një drejtim";
+            document.querySelector('option[value="round-trip"]').textContent = "Me kthim";
+
+            // Change the button text for switching back to English
+            document.querySelector('.language-switcher button').textContent = "Kaloni në Anglisht";
+        }
+    </script>
+</body>
+</html>

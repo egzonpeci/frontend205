@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1:5500/bootstrap/index.html#projects -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portofolio</title>
+    <link rel="stylesheet" href="./My portofolio_files/styles.css">
+
+</head>
+<body>
+
+
+
+    <header>
+        <h1>Rrezon Rrustemi</h1>
+        <p>Web Developer | Chess Player| Freelancer</p>
+    </header>
+
+    <div class="gallery">
+        <a href="./My portofolio_files/albert.jpeg">
+            <img src="./My portofolio_files/albert.jpeg" alt="My Photo" width="200" height="100">
+        </a>
+      </div>
+
+   
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/bootstrap/index.html#about">About</a></li>
+            <li><a href="http://127.0.0.1:5500/bootstrap/index.html#projects">Projects</a></li>
+            <li><a href="http://127.0.0.1:5500/bootstrap/index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Rrezoni,Passionate 14-year-old <b>Web developer</b>  with 1 year of experience building creative and impactful projects. Skilled in front-end  with a strong interest in problem-solving and innovation. Enjoys freelancing for fun and also skilled in chess with 2-3 years of experience.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects that i have done!</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>This is a very cool project i built.</p>
+            <a href="http://127.0.0.1:5500/home.html">Here</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3> 
+            <p>Another awesome project i did its awesome.</p>
+            <a href="http://127.0.0.1:5500/sign-in.html">Here</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: rrezoniirrustemi@gmail.com</p>
+       
+    </section>
+
+    <footer>
+        <p>© 2025 Rrezon Rrustemi. All rights reserved.</p>
+    </footer>
+
+<style>
+    .circle-img {
+        width: 150px; /* Set Fixed Width */
+        height: 150px; /* Set fixed height (same as width for perfect circle) */
+        border-radius: 50%; /* MAKES THE IMAGE CIRCULAR */
+        object-fit: cover; /* ensures the image fills space without disortion */
+        border: 3px;  /* Optional : adds a border */
+    }
+</style>
+
+    
+      
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

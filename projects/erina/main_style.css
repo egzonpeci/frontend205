@@ -1,0 +1,119 @@
+
+
+body {
+    
+    background-color: black
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+#order-form {
+    background-color:bisque
+    padding: 40px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bg-dark {
+    background-color: #333 !important;
+}
+
+.text-white {
+    color:black !important;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+#appetizers, #main-courses, #desserts {
+    background-color: black
+    padding: 40px 0;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+    .card-img-top {
+        height: 150px;
+    }
+    .card-body {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

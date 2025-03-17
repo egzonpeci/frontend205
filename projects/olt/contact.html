@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="finalprojectHome.html">
+            <img src="../images/rentacarexclusive.jpeg.png" alt="">
+        </a>
+        <ul>
+            <li><a href="finalprojectHome.html">Home</a></li>
+            <li><a href="fpcars.html">Cars</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="book-now">
+        <h1>Book your car now</h1>
+        <br><br>
+        <form action="booked.html" method="get" enctype="multipart/form-data">
+            <label for="firstname">First Name</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="John"><br>
+            <label for="lastname">Last Name</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="Doe"><br>
+            <label for="phoneNumber">Phone Number</label><br>
+            <input type="number" id="phonenumber" name="phonenumber" placeholder="ex: +383 44 111 222"><br>
+            <label for="email">E-mail</label><br>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <label for="rentalDate">Rental Date & Time</label><br>
+            <input type="datetime-local" id="rentalDate" name="rentalDate"><br>
+            <label for="returnDate">Return Date & Time</label><br>
+            <input type="datetime-local" id="returnDate" name="returnDate"><br>
+            <label for="chooseyourcar">Choose your car</label><br>
+            <select name="chooseyourcar" id="chooseyourcar">
+                <option value="" selected>Please select</option>
+                <option value="gt63">Mercedes-Benz GT 63 S E-Performance</option>
+                <option value="s680">Mercedes-Benz MAYBACH S680</option>
+                <option value="g63">Mercedes-Benz G 63 AMG</option>
+                <option value="e63">Mercedes-Benz E 63 S AMG</option>
+                <option value="rs7">Audi RS7</option>
+                <option value="dbx">Aston Martin DBX</option>
+                <option value="gt3">Porsche GT3 RS</option>
+                <option value="rsq8">Audi RSQ8</option>
+                <option value="purosangue">Ferrari Purosangue</option>
+                <option value="urus">Lamborghini Urus</option>
+                <option value="cullinan">Rolls-Royce Cullinan</option>
+                <option value="ghost">Rolls-Royce Ghost</option>
+                <option value="huracan">Lamborghini Huracan EVO</option>
+                <option value="gls">Mercedes-Benz GLS 600 MAYBACH</option>
+                <option value="gle">Mercedes-Benz GLE 63 S</option>
+                <option value="a45">Mercedes-Benz A 45 S</option>
+                <option value="m5">BMW M5 Competition</option>
+                <option value="m3">BMW M3 Competition</option>
+            </select><br>
+            <label for="cityofrent">City of Rent</label><br>
+            <input type="text" id="cityofrent" name="cityofrent" placeholder="ex: Tirana"><br>
+            <label for="specialRequests">Special Requests</label><br>
+            <textarea cols="50" rows="5" name="specialRequests" id="specialRequests"></textarea><br>
+            <input type="submit" values="submit">
+        </form>
+    </div>
+
+    <div class="contact">
+        <h1>Contact</h1>
+        <br>
+        <h2>Phone: +383 45 000111</h2>
+        <h2>E-mail: info@exclusiverental.com</h2>
+        <img width="50" height="50" src="../images/instagramlogo.jpeg" alt=""> 
+        <img width="45" height="45" src="../images/email111.jpeg" alt="">
+        <br>
+        <h1>PRISTINA</h1>
+        <h1>TIRANA</h1>
+        <h1>SKOPJE</h1>
+        <img class="logo" src="../images/rentacarexclusive.jpeg.png" alt="">
+    </div>
+</body>
+
+</html>

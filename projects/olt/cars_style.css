@@ -1,0 +1,349 @@
+html,
+body {
+    margin: 0%;
+    background-color: #333;
+}
+
+
+/*navigation bar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+ .navbar img{
+    margin: 0;
+    width: 450px;
+    height: 100px;
+ }
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 15px;
+}
+
+.navbar li a {
+    display: block;
+    color: #D8B35F;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/*Car position*/
+
+
+.car-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+    padding: 40px;
+}
+
+.car-container > div {
+    background: #222;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.car-container > div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #D8B35F;
+}
+
+.car-container img {
+    width: auto; /* Keeps the original image size */
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.car-container h4 {
+    color: #D8B35F;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.car-container p {
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+/*Cars*/
+
+.gt63s{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.gt63s:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+
+.specsgt63{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.s680{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.s680:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsS680{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.g63{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.g63:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsg63{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.e63s{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.e63s:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specse63{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.rs7{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.rs7:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsrs7{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.dbx{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.dbx:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsdbx{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.gt3rs{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.gt3rs:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsgt3rs{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.rsq8{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.rsq8:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsrsq8{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.ferrarip{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.ferrarip:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsferrarip{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.urus{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.urus:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsurus{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.cullinan{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.cullinan:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specscullinan{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.ghost{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.ghost:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsghost{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.huracan{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.huracan:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specshuracan{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.gls{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.gls:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsgls{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.gle{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.gle:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsgle{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.a45{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.a45:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsa45{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.m5{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.m5:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsm5{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.m3{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+    transition: 0.3s;
+    width: 20%;
+}
+.m3:hover{
+    box-shadow: 0 8px 16px 0 #D8B35F;
+}
+.specsm3{
+    padding: 2px 16px;
+    color: #D8B35F;
+}
+
+.book-now a:link, a:visited{
+    background-color: #D8B35F;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5%;
+}
+.book-now a:hover, a:active{
+    background-color: #D8B35F;
+}
+.book-now{
+    margin-left: 60%;
+}
+
+
+
+
